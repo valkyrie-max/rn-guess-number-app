@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     headerTitle: {
-        color: '#352640',
+        color: '#3b385b',
+        fontWeight: 'bold',
         fontSize: 28,
         textTransform: 'uppercase'
     }

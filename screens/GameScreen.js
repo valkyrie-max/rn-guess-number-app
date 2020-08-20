@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {View, Text, StyleSheet, Button} from 'react-native'
-import NumberContainer from '../components/NumberContainer'
+import Colors from '../constants/colors'
 import Card from '../components/Card'
 
 const generateRandomNumber = (min, max, exclude) => {
@@ -21,8 +21,10 @@ const GameScreen = props => {
 
     return (
         <View style={styles.screen}>
-            <Text>Opponent's Guess:</Text>
-            <NumberContainer>{currentGuess}</NumberContainer>
+            <Card style={styles.summaryContainer}>
+                <Text style={styles.generalText}>Opponent's Guess:</Text>
+                <Text style={styles.number}>{currentGuess}</Text> 
+            </Card>
             <Card style={styles.buttonContainer}>
                 <Button title="Lower" onPress={ () => {} }/>
                 <Button title="Greater" onPress={ () => {} }/>
@@ -43,6 +45,28 @@ const styles = StyleSheet.create({
         marginTop: 20,
         width: 300,
         maxWidth: '80%'
+    },
+    generalText: {
+        fontSize: 18
+    },
+    summaryContainer: {
+        marginTop: 40,
+        width: 350,
+        maxWidth: '80%',
+        alignItems: 'center'
+    },
+    number: {
+        fontWeight: '700',
+        textAlign: 'center',
+        fontSize: 55,
+        color: Colors.accent,
+        borderWidth: 3,
+        borderColor: Colors.primary,
+        borderRadius: 15,
+        width: 100,
+        marginVertical: 20,
+        textAlignVertical: 'center',
+        padding: 5
     }
 })
 

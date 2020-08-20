@@ -36,7 +36,7 @@ const StartGameScreen = props => {
         if (isNaN(chosenNumber) || chosenNumber <= 0 || chosenNumber > 99) {
             Alert.alert(
                 'Invalid number!', 
-                'Number has to be between 1 and 99',
+                'Number has to be between 1 and 99.',
                 [{
                     text: 'Okay, I got it',
                     style: 'destructive',

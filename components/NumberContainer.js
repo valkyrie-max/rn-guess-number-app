@@ -7,9 +7,7 @@ import Colors from '../constants/colors'
 const NumberContainer = props => {
     return(
         <Card style={styles.summaryContainer}>
-            <Text style={styles.numberCardText}>Chosen Number:</Text>
             <Text style={styles.number}>{props.selectedNumber}</Text>
-            <Button color="black" title="Start!" />
         </Card>
     )
 }
@@ -21,16 +19,10 @@ const styles = StyleSheet.create({
         maxWidth: '80%',
         alignItems: 'center'
     },
-    numberCardText: {
-        fontSize: 20,
-        color: Colors.primary,
-        marginBottom: 10
-    },
     number: {
         fontWeight: '700',
         textAlign: 'center',
-        fontSize: 25,
-        marginTop: 5,
+        fontSize: 55,
         color: Colors.accent,
         borderWidth: 3,
         borderColor: Colors.primary,

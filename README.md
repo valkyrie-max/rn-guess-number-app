@@ -23,5 +23,5 @@ If you are interested in messing around with the app, please do the following:
 
 **However, this will not create a simulation**, this process will create a Metro Bundler. In order to see how it runs on phones you can:
 1. Run it in an [Android Simulator](https://developer.android.com/studio)
-2. Run it in an [iOS simulator](https://developer.apple.com/xcode/) (AVAILABLE ONLY ON iOS SYSTEM)
+2. Run it in an [iOS simulator](https://developer.apple.com/xcode/) (available only on iOS)
 3. Run it on your own device (Android or iOS) by scanning the QR code or opening it in the Expo mobile app

@@ -11,7 +11,6 @@ import {
 import Colors from '../constants/colors'
 import Card from '../components/Card'
 import Input from '../components/Input'
-import NumberContainer from '../components/NumberContainer'
 
 
 const StartGameScreen = props => {

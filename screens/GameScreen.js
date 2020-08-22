@@ -41,7 +41,8 @@ const GameScreen = props => {
             currentLow.current = currentGuess;
         }
 
-        generateRandomNumber(currentLow.current, currentHigh.current, currentGuess)
+        const nextNumber = generateRandomNumber(currentLow.current, currentHigh.current, currentGuess)
+        setCurrentGuess(nextNumber)
     }
 
     return (

@@ -23,9 +23,9 @@ const styles = StyleSheet.create({
     },
     headerTitle: {
         color: 'white',
-        fontWeight: 'bold',
         fontSize: 28,
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        fontFamily: 'open-sans-bold'
     }
 })
 

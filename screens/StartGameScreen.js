@@ -112,7 +112,8 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 20,
-        marginVertical: 40
+        marginVertical: 40,
+        fontFamily: 'open-sans-bold'
     },
     inputContainer: {
         width: 350,
@@ -157,7 +158,7 @@ const styles = StyleSheet.create({
         marginVertical: 20,
         textAlignVertical: 'center',
         padding: 5
-    }
+    },
 })
 
 export default StartGameScreen

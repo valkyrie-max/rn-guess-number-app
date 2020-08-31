@@ -2,6 +2,7 @@ import React from 'react'
 import {View, Text, StyleSheet, Button} from 'react-native'
 
 import Card from '../components/Card'
+import BodyText from '../components/BodyText'
 import Colors from '../constants/colors'
 
 const GameOver = props => {
@@ -10,13 +11,13 @@ const GameOver = props => {
             <Card style={styles.summaryContainer}>
                 <Text style={styles.gameOverText}>Game is over!</Text>
                 <View style={styles.numbers}>
-                    <Text style={styles.generalText}>Number you picked:</Text>
+                    <BodyText style={styles.generalText}>Number you picked:</BodyText>
                     <View style={styles.specificNumberContainer}>
                         <Text style={styles.specificNumber}>{props.userNumber}</Text>
                     </View>
                 </View>
                 <View style={styles.numbers}> 
-                    <Text style={styles.generalText}>Number of rounds:</Text>
+                    <BodyText style={styles.generalText}>Number of rounds:</BodyText>
                     <View style={styles.specificNumberContainer}>
                         <Text style={styles.specificNumber} >{props.roundsNumber}</Text>
                     </View>
@@ -41,11 +42,11 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     gameOverText: {
-        fontSize: 30,
+        fontSize: 24,
         marginBottom: 20
     },
     generalText: {
-        fontSize: 18,
+        fontSize: 16,
         marginBottom: 5
     },
     numbers: {
@@ -59,15 +60,15 @@ const styles = StyleSheet.create({
         width: 100,
         alignItems: 'center',
         marginVertical: 10,
-        padding: 10
+        padding: 5
     },
     specificNumber: {
         fontSize: 30,
         fontWeight: '700',
-        color: Colors.primary,
+        color: Colors.accent,
     },
     restartButton: {
-        paddingTop: 20
+        marginVertical: 10
     }
 })
 

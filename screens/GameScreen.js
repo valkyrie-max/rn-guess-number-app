@@ -2,6 +2,9 @@ import React, {useState, useRef, useEffect} from 'react'
 import {View, Text, StyleSheet, Button, Alert} from 'react-native'
 import Colors from '../constants/colors'
 import Card from '../components/Card'
+// import DefaultStyles from '../constants/default-styles'
+// then just put the style property on Text like so:
+// style={DefaultStyles.bodyText}
 
 const generateRandomNumber = (min, max, exclude) => {
     min = Math.ceil(min); 

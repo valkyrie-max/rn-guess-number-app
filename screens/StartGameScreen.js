@@ -11,6 +11,7 @@ import {
 import Colors from '../constants/colors'
 import Card from '../components/Card'
 import Input from '../components/Input'
+import BodyText from '../components/BodyText'
 
 
 const StartGameScreen = props => {
@@ -68,7 +69,7 @@ const StartGameScreen = props => {
 
                 {/* user number input */}
                 <Card style={styles.inputContainer}>
-                    <Text>Enter a Number:</Text>
+                    <BodyText>Enter a Number:</BodyText>
                     <Input style={styles.input} 
                         blurOnSubmit 
                         autoCapitalize="none" 

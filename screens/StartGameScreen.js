@@ -6,7 +6,8 @@ import {
     Button, 
     TouchableWithoutFeedback, 
     Keyboard, 
-    Alert } from 'react-native'
+    Alert,
+    Image } from 'react-native'
 
 import Colors from '../constants/colors'
 import Card from '../components/Card'
@@ -66,7 +67,6 @@ const StartGameScreen = props => {
         <TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>
             <View style={styles.screen}>
                 <Text style={styles.title}>Start a New Game?</Text>
-
                 {/* user number input */}
                 <Card style={styles.inputContainer}>
                     <BodyText>Enter a Number:</BodyText>
